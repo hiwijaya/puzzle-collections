@@ -49,7 +49,7 @@ for group_length in range(1, n+1):
             if idx >= n:
                 break
             group.append(values[idx])
-        print(group, end='')
+        print(group)
 
         # find minimum in group || otherwise, you can use build in function --> min(group)
         minimum = 0
@@ -60,5 +60,5 @@ for group_length in range(1, n+1):
             if val < minimum:
                 minimum = val
         total += minimum
-    print('')
+print('')
 print(total)
